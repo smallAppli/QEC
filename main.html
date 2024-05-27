@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QUI EST-CE ?</title>
+</head>
+<body>
+    <header>
+        QUI EST-CE ?
+    </header>
+
+    <table>
+        <tr>
+            <td>
+                <img src="victor.png" alt="victor">
+                <p>victor</p>
+            </td>
+            <td>
+                <img src="adonis.png" alt="adonis">
+                <p>adonis</p>
+            </td>
+            <td>
+                <img src="legolas.png" alt="legolas">
+                <p>legolas</p>
+            </td>
+            <td>
+                <img src="omar.jpg" alt="omar sy">
+                <p>omar sy</p>
+            </td>
+            <td>
+                <img src="dorian.jpg" alt="dorian">
+                <p>dorian</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="zoe.jpeg" alt="zoe saldana">
+                <p>zoe saldana</p>
+            </td>
+            <td>
+                <img src="lili.jpg" alt="lili">
+                <p>lili</p>
+            </td>
+            <td>
+                <img src="alex.jpg" alt="alexandre">
+                <p>alexandre</p>
+            </td>
+            <td>
+                <img src="perry.png" alt="perry">
+                <p>perry</p>
+            </td>
+            <td>
+                <img src="dr.png" alt="docteur">
+                <p>docteur la peluche</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="lego.png" alt="lego">
+                <p>lego</p>
+            </td>
+            <td>
+                <img src="rock.jpg" alt="the rock">
+                <p>the rock</p>
+            </td>
+            <td>
+                <img src="romain.png" alt="romain">
+                <p>romain</p>
+            </td>
+            <td>
+                <img src="lenny.jpg" alt="lenny">
+                <p>lenny</p>
+            </td>
+            <td>
+                <img src="emma.jpg" alt="emma watson">
+                <p>emma watson</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="Iron_Man.jpg" alt="iron man">
+                <p>iron man</p>
+            </td>
+            <td>
+                <img src="baptiste.jpg" alt="baptiste">
+                <p>baptiste</p>
+            </td>
+            <td>
+                <img src="sophie.jpg" alt="sophie">
+                <p>sophie</p>
+            </td>
+            <td>
+                <img src="aya.jpg" alt="aya nakamura">
+                <p>aya nakamura</p>
+            </td>
+            <td>
+                <img src="damien.png" alt="damien">
+                <p>damien</p>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        // Fonction pour changer l'image au clic
+        function changeImage(event) {
+            // Chemin de l'image noire
+            const blackImagePath = 'noir.png';
+            // Modifier l'attribut src de l'image cliquée
+            event.target.src = blackImagePath;
+        }
+
+        // Récupérer toutes les images dans le tableau
+        const images = document.querySelectorAll('table img');
+
+        // Ajouter un écouteur d'événement à chaque image
+        images.forEach(image => {
+            image.addEventListener('click', changeImage);
+        });
+    </script>
+    
+</body>
+</html>
